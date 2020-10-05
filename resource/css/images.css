@@ -7,10 +7,21 @@
     width: 100%;
 }
 .photo-list li {height:200px;padding:5px}
-.photo-list li > div {display:flex;flex-flow: row;justify-content: center;align-items: center;height:100%;padding:5px;text-align:center;border:1px solid #d9d9d9}
-.photo-list li img {max-height:100%}
-.photo-list li img[data-src] {width:150px}
+.photo-list div {display:flex;flex-flow: row;justify-content: center;align-items: center;height:100%;padding:5px;text-align:center;border:1px solid #d9d9d9}
+.photo-list img {max-height:100%}
+.photo-list img[data-src] {width:150px}
+
+.fixed {
+    position:fixed;left:0;top:0;z-index:10;width:100%;height:100% !important;padding: 60px 5px !important;background:rgba(0,0,0,.8);
+    display: flex;justify-content: center;align-items: center;
+}
+.fixed div {overflow:auto;height:auto;max-height:100%;align-items:flex-start;border:0 none}
+.fixed button {position:absolute;right:10px;top:10px;width:40px;height:40px;border:2px solid #fff;border-radius:100%;background:transparent}
+.fixed button:after,.fixed button:before {content:'';position:absolute;left:0;top:50%;margin-top:-1px;margin-left:15%;width:70%;height:2px;background:#fff}
+.fixed button:after {transform: rotate(45deg);}
+.fixed button:before {transform: rotate(-45deg);}
 @media screen and (max-width:540px) {
-    .photo-list li {width:100%;height:auto}
-    .photo-list li img {max-height:none}
+    .myworld-wrap {padding:5px}
+    .photo-list li {height:auto}
+    .photo-list img {max-height:none}
 }

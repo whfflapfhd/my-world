@@ -492,20 +492,6 @@
             </li>
         </ul>
     </section>
-    <script type="text/javascript">
-    //<![CDATA[
-        $(function() {
-            $('.photo-list img').Lazy({                
-                visibleOnly: true,
-                effect: "fadeIn",
-                effectTime: 500,
-                threshold: 0,
-                onError: function(element) {
-                    console.log('error loading ' + element.data('src'));
-                }
-            });
-        });
-    //]]>
-    </script>
+    <script type="text/javascript" src="../../resource/js/images.js" defer></script>
 </body>
 </html>
