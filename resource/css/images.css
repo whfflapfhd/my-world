@@ -7,10 +7,10 @@
     width: 100%;
 }
 .photo-list li {height:200px;padding:5px}
-.photo-list li > div {height:100%;padding:5px;text-align:center;border:1px solid #d9d9d9}
-.photo-list li img {height:100%}
+.photo-list li > div {display:flex;flex-flow: row;justify-content: center;align-items: center;height:100%;padding:5px;text-align:center;border:1px solid #d9d9d9}
+.photo-list li img {max-height:100%}
 .photo-list li img[data-src] {width:150px}
 @media screen and (max-width:540px) {
     .photo-list li {width:100%;height:auto}
-    .photo-list li img {max-width:100%;height:auto}
+    .photo-list li img {max-height:none}
 }

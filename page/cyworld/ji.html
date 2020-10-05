@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My World - family</title>
+    <link rel="stylesheet" href="../../resource/css/reset.css">
+    <link rel="stylesheet" href="../../resource/css/images.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../resource/js/jquery.lazy.min.js" defer></script>
+</head>
+<body>
+    <section class="myworld-wrap">
+        <ul class="photo-list">
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_1.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_2.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_3.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_4.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_5.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_6.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_7.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_8.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_9.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_10.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_11.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_12.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_13.jpg"></div>
+            </li>
+            <li>
+                <div><img alt="" class="lazy" data-src="../../data/cyworld/ji/image_14.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(function() {
+            $('.photo-list img').Lazy({                
+                visibleOnly: true,
+                effect: "fadeIn",
+                effectTime: 500,
+                threshold: 0,
+                onError: function(element) {
+                    console.log('error loading ' + element.data('src'));
+                }
+            });
+        });
+    //]]>
+    </script>
+</body>
+</html>
